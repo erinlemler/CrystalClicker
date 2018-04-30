@@ -5,13 +5,15 @@ $(document).ready(function() {
   var losses = 0;
   var userScore = 0;
   var pictures=["assets/images/arc.jpg","assets/images/arc.jpg","assets/images/arc.jpg","assets/images/arc.jpg"]
+
 $("#userScore").text(userScore)
 $("#target").text(target)
-for (var i = 0; i<pictures.length;i++){
+
+for (var i = 0; i < pictures.length; i++){
   var crystalImg = $("<img>")
-  crystalImg.attr("src",pictures[i])
-  crystalImg.attr("data-crystal",Math.floor(Math.random()*12))
- crystalImg.attr("class","clickCrystal")
+crystalImg.attr("src",pictures[i])
+crystalImg.attr("data-crystal",Math.floor(Math.random()*12))
+crystalImg.attr("class","clickCrystal")
  $("#crystals").append(crystalImg)
 }
 
@@ -20,10 +22,10 @@ $(".clickCrystal").on("click",function(){
   userScore += parseInt(score)
   $("#userScore").text(userScore)
   if (userScore > target){
-    alert("you lose")
-  } else if (userScore === target){
-    alert("you win")
-  }
+    alert("You lose!!")
+} else if (userScore === target){
+    alert("You win!!")
+}
 })
 
 });

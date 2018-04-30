@@ -3,6 +3,7 @@ body {
     height: 1000px;
 }
 h2 {
+    
     margin: 100px;
     height: 200px;
     width: 400px;
@@ -13,12 +14,15 @@ h2 {
     color: whitesmoke;
     font-size: 40px;
 }
-#instructionsBox{
-    float: left;
-    margin: 20px;
-    width: 600px;
-    height: 500px;
-    background-color: tan;
-}
-
+#instructionsBox {
+    margin: 100px;
+    height: 100px;
+    width: 1000px;
+    background-color: plum;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    
 }
