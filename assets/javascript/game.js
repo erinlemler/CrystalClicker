@@ -8,6 +8,8 @@ $(document).ready(function() {
 
 $("#userScore").text(userScore)
 $("#target").text(target)
+$("#userWins").text(wins)
+$("#userLoss").text(losses)
 
 for (var i = 0; i < pictures.length; i++){
   var crystalImg = $("<img>")
@@ -20,11 +22,17 @@ crystalImg.attr("class","clickCrystal")
 $(".clickCrystal").on("click",function(){
   var score=$(this).attr("data-crystal")
   userScore += parseInt(score)
+
   $("#userScore").text(userScore)
-  if (userScore > target){
+  
+  if (userScore > target){ //PLAYER LOST THE GAME
     alert("You lose!!")
-} else if (userScore === target){
+    losses++; //this means increase this variable by 1
+    $('#userLoss').text(losses);
+} else if (userScore === target){ //PLAYER WON THE GAME
     alert("You win!!")
+    wins++;
+    $('#userWins').text(wins);
 }
 })
 
