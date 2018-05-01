@@ -14,7 +14,7 @@ $("#userLoss").text(losses)
 for (var i = 0; i < pictures.length; i++){
   var crystalImg = $("<img>")
 crystalImg.attr("src",pictures[i])
-crystalImg.attr("data-crystal",Math.floor(Math.random()*12))
+crystalImg.attr("data-crystal",Math.floor(Math.random()*12)+2)
 crystalImg.attr("class","clickCrystal")
  $("#crystals").append(crystalImg)
 }
