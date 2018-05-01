@@ -2,53 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Paris Destination Collector Game</title>
+  <title>Crystal Collector Game!</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
  
 </head>
 <body>
-  <div>
-    <h2 class="text-center">Paris Destination Collector!</h2>
+  
+    <div id="top-container">
+    <h2 class="text-center titleText">Crystal Collector Game!</h2>
   </div>
 
-</div>
-<div id="userScoreBar">Your Score: <span id="userScore"></span></div>
+<div>
+<div id="userScoreBar">Your Score: <span id="userScoreValue"></span></div>
 <div id="userWinsBar">Your Wins: <span id="userWins"></span></div>
 <div id="userLossBar">Your Losses: <span id="userLoss"></span></div>
-<div id="target"></div>
-<div id="crystals">
-
-
-
-    <div id="instructionsBox"
-        <p>There will be four Paris destinations displayed as buttons on the page.
-            The player will be shown a random number at the start of the game.
-  
-            When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
-  
-  
-            Your game will hide this amount until the player clicks a crystal.
-            When they do click one, update the player's score counter.
-  
-  
-            The player wins if their total score matches the random number from the beginning of the game.
-            The player loses if their score goes above the random number.
-          </p>
-
-          </div>
-          
-
-
-
-
-
-
-
-
-
-
+<div id="targetBar">Target: <span id="target"></span></div>
+<span id="crystals"></span>
 </div>
+
+</body>
+
+    <div id="instructionsBox">
+
+        <p>There will be four crystals displayed as buttons on the page.
+            The player will be shown a random number at the start of the game.</P>
+  
+            <p>When the player clicks on a crystal, it will add a specific amount of points to the player's total score.</p>
+  
+  
+            <p>Your game will hide this amount until the player clicks a crystal.
+            When they do click one, update the player's score counter.</p>
+  
+  
+            <p>The player wins if their total score matches the random number from the beginning of the game.
+            The player loses if their score goes above the random number.</p>
+          </p>
+        </div>
+       </div>
+          
 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="assets/javascript/game.js"></script>
 
